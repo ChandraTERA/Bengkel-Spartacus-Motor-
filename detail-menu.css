@@ -1,0 +1,85 @@
+* {
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+
+/* Gaya untuk mengatur lebar kolom */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #000; /* Mengatur border */
+    padding: 8px; /* Padding untuk sel */
+}
+
+/* Gaya untuk mengatur lebar kolom */
+th:nth-child(1), td:nth-child(1) {
+    width: 113.59px;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 79.09px;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    width: 93.50px;
+}
+
+/* Gaya untuk mengatur border-top pada header kolom pertama */
+th:nth-child(1) {
+    border-top: 3px solid #207CDF;
+}
+
+/* Gaya untuk membuat teks menjadi rata tengah pada semua sel */
+th, td {
+    text-align: center;
+}
+
+/* Gaya untuk padding pada sel-sel pada baris pertama di dalam tbody */
+tbody tr:first-child td {
+    padding-top: 13px;
+    padding-bottom: 11px;
+}
+
+/* Gaya untuk padding pada sel-sel kecuali baris pertama di dalam tbody */
+tbody tr:not(:first-child) td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-content p {
+    margin: 5px 0;
+  }
+  
+  .footer-content ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  
+  .footer-content li {
+    margin: 0 10px;
+  }
+  
+  .footer-content a {
+    color: #fff;
+    text-decoration: none;
+  }
