@@ -1,0 +1,44 @@
+* {
+      margin: 0 auto;
+      padding: 0 auto;
+      box-sizing: border-box;
+}
+.header {
+      width: 100%;
+      padding: 15px;
+      padding-bottom: 15px;
+      background: #00BF71;
+}
+
+
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+}
+
+li a {
+      margin-bottom: 10px;
+      float: left;
+}
+
+.lanjut {
+      float: right;
+    }
+  
+
+ul li a {
+      display: inline-block;
+      color: whitesmoke;
+      text-decoration: none;
+      margin-top: 15px;
+}
+
+a:hover {
+      color: whitesmoke;
+}
+
+.container {
+      margin-top: 20vh;
+}
