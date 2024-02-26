@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+      <link rel="icon" href="./img/Spartacus Motor.svg"  type="image/x-icon"/>
+      <link rel="stylesheet" href="metode-pembayaran.css" type="text/css"/>
+      <title>Metode Pembayaran</title>
+</head>
+<body>
+      <div class="header">
+            <nav class="menu">
+                  <ul>
+                        <li><a href="pembayaran.html"><i class="fa-solid fa-arrow-left"></i>&emsp;Kembali</a></li>
+                        <li class="lanjut"><a href="Ringkasan-pembayaran.html"><i class="fa-solid fa-arrow-right"></i>&emsp;Lanjutkan</a></li>
+                  </ul>
+            </nav>
+      </div>
+
+      
+      <!-- MENU Method Payment E-Wallet-->
+
+      <form action="" method="" class="flex flex-col mt-8">
+            <div class="container">
+                  <div class="list-group">
+                        <div class="list-group-item">
+                              <div class="d-flex align-items-center">
+                                    <div class="text-lg"><span class="text-center">Transfer E-wallet</span></div>
+                              </div>
+                        </div>
+                        <div class="list-group-item">
+                              <label for="dana" class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-flex align-items-center">
+                                          <img src="./img/pembayaran/Dana.svg" alt="Logo Dana" width="35px" height="auto" class="me-3"/>&nbsp;
+                                          <div class="text-lg">Dana</div>
+                                    </div>
+                                    <input type="radio" id="dana" name="paymentMethod" value="" required/>
+                              </label>
+                        </div>
+
+                        <div class="list-group-item">
+                              <label for="goPay" class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-flex align-items-center">
+                                          <img src="./img/pembayaran/Gopay.svg" alt="Logo GoPay" width="35px" height="auto" class="me-3"/>&nbsp;
+                                          <div class="text-lg">GoPay</div>
+                                    </div>
+                                    <input type="radio" id="goPay" name="paymentMethod" value="" required/>
+                              </label>
+                        </div>
+
+                        <div class="list-group-item">
+                              <label for="ovo" class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-flex align-items-center">
+                                          <img src="./img/pembayaran/Ovo.svg" alt="Logo Ovo" width="35px" height="auto" class="me-3"/>&nbsp;
+                                          <div class="text-lg">Ovo</div>
+                                    </div>
+                                    <input type="radio" id="ovo" name="paymentMethod" value="" required/>
+                              </label>
+                        </div>
+
+                        <div class="list-group-item">
+                              <label for="linkaja" class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-flex align-items-center">
+                                          <img src="./img/pembayaran/LinkAja.svg" alt="Logo linkaja" width="35px" height="auto" class="me-3"/>&nbsp;
+                                          <div class="text-lg">LinkAja</div>
+                                    </div>
+                                    <input type="radio" id="linkaja" name="paymentMethod" value="linkaja" required/>
+                              </label>
+                        </div>
+
+                        <div class="list-group-item">
+                              <label for="shopeepay" class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-flex align-items-center">
+                                          <img src="./img/pembayaran/ShopeePay.svg" alt="Logo shopeepay" width="35px" height="auto" class="me-3"/>&nbsp;
+                                          <div class="text-lg">ShopeePay</div>
+                                    </div>
+                                    <input type="radio" id="shopeepay" name="paymentMethod" value="" required/>
+                              </label>
+                        </div>
+
+                        <div class="list-group-item">
+                              <label for="cash" class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-flex align-items-center">
+                                          <img src="./img/pembayaran/Cash.svg" alt="Logo Cash" width="35px" height="auto" class="me-3"/>&nbsp;
+                                          <div class="text-lg">Cash</div>
+                                    </div>
+                                    <input type="radio" id="cash" name="paymentMethod" value="" required/>
+                              </label>
+                        </div>
+                  </div>
+                  
+                  <!-- Menu Method  Payment Bank Account-->
+            
+                  <div class="list-group">
+                        <div class="list-group-item">
+                              <div class="d-flex justify-content-between align-items-center">
+                                    <label class="form-check-label" for="Bank">Transfer Bank
+                                          <div class="text-lg"><span class="text-center"></span></div>
+                                    </label>   
+                              </div>
+                        </div>
+                        <div class="list-group-item" id="bankCollapse">
+                              <label for="BCA" class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-flex align-items-center">
+                                          <img src="./img/pembayaran/BCA.svg" alt="Logo BCA" width="35px" height="auto" class="me-3"/>&nbsp;
+                                          <div class="text-lg">BCA</div>
+                                    </div>
+                                    <input type="radio" id="BCA" name="paymentMethod" value="BCA" required/>
+                              </label>
+                        </div>
+                        <div class="list-group-item " id="bankCollapse">
+                              <label for="BRI" class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-flex align-items-center">
+                                          <img src="./img/pembayaran/BRI.svg" alt="Logo BCA" width="35px" height="auto" class="me-3"/>&nbsp;
+                                          <div class="text-lg">BRI</div>
+                                    </div>
+                                    <input type="radio" id="BRI" name="paymentMethod" value="BRI" required/>
+                              </label>
+                        </div>
+                        <div class="list-group-item " id="bankCollapse">
+                              <label for="BNI" class="d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-flex align-items-center">
+                                          <img src="./img/pembayaran/BNI.svg" alt="Logo BNI" width="35px" height="auto" class="me-3"/>&nbsp;
+                                          <div class="text-lg">BRI</div>
+                                    </div>
+                                    <input type="radio" id="BNI" name="paymentMethod" value="BNI" required/>
+                              </label>
+                        </div>
+                        <div class="list-group-item " id="bankCollapse">
+                              <label for="MANDIRI" class="form-check-label d-flex justify-content-between align-items-center mx-auto">
+                                    <div class="d-flex align-items-center">
+                                          <img src="./img/pembayaran/Mandiri.svg" alt="Logo MANDIRI" width="35px" height="auto" class="me-3"/>&nbsp;
+                                          <div class="text-lg">BRI</div>
+                                    </div>
+                                    <input class="form-check-input" type="radio" name="paymentMethod" id="MANDIRI" value="MANDIRI" required/>
+                              </label>
+                        </div>
+                  </div>
+            </div>
+        </form>
+        
+        <div class="d-flex justify-content-center align-items-center click-button">
+            <button type="submit" class="btn btn-success"><a class="nav-link" href="Ringkasan-pembayaran.html">Konfirmasi</a></button>
+      </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+      
+
+</body>
+</html>
