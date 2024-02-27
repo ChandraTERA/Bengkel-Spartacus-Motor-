@@ -1,0 +1,111 @@
+* {
+      margin: 0 auto;
+      padding: 0 auto;
+      box-sizing: border-box;
+}
+
+.header {
+      padding: 15px;
+      background: #00BF71;
+  }
+
+  
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  
+  li a {
+      float: left;
+  }
+  
+  .lanjut {
+    float: right;
+  }
+
+  ul li a {
+      display: inline-block;
+      color: whitesmoke;
+      text-decoration: none;
+      margin-top: 15px;
+  }
+  
+  a:hover {
+      color: whitesmoke;
+  }
+
+  .container-sm {
+      margin-top: 33px;
+  }
+
+  p {
+      font-size: 13px;
+  }
+
+  .container {
+      margin-top: 10px;
+  }
+.detail-transaksi {
+      font-weight: 700;
+}
+  span {
+      font-weight: 700;
+  }
+
+  .date {
+      float: right;
+      margin-top: 25px;
+  } 
+  
+  .row-left {
+      font-family:'Inter', sans-serif;
+      float: right;
+      max-width: 125px;
+      max-height: max-content;
+  }
+
+  .cost {
+     float: right; 
+  }
+  
+  span.cost {
+      float: right;
+  }
+  .method-choice {
+      margin-top: 6rem;
+  }
+
+  .left {
+      float: right;
+  }
+
+  .container-fluid {
+      margin-top: 33px;
+  }
+
+  .fa-solid{
+      margin-bottom: 15px;
+  }
+
+  .container2 {
+      margin-top: 5.2rem;
+  }
+
+  button {
+      width: 123px;
+      height: 34%;
+      float: right;
+  }
+
+@media screen and (min-width: 480px) {
+      div {
+                  max-width: 480px;
+      }
+
+      .header,.menu {
+            max-width: none;
+      }
+      }
+                
