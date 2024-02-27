@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+}
+
+section {
+  background-image: url('./img/bg-hero.png');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 1280;
+  z-index: 10;
+  position: relative;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+
+
+.block-image {
+  position: absolute;
+  width: 100%;
+  height: 100;
+  top: 0;
+  left: 0;
+}
+
+#myprofil {
+  border:2px solid white;
+}
+
+
+
+.inner-image {
+  display: flex; /* Tampilan flex */
+  justify-content: center; /* Penyusunan konten ke tengah secara horizontal */
+  align-items: center; /* Penyusunan item ke tengah secara vertikal */
+  height: 100vh; /* Tinggi 100% dari viewport */
+  position: absolute; /* Posisi absolut */
+  width: 100%;
+}
+
+
+/* Efek Hover */
+.navbar-nav .nav-link:hover {
+    color: green; /* Ganti warna teks saat dihover */
+  }
+
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  /* Hero */
+
+
+  @media (min-width: 768px) {
+    #home {
+      flex-direction: row;
+    }
+  }
+
+  .custom-btn:hover {
+    color: #10b981; /* Warna teks hijau saat dihover */
+    background-color: #ffffff; /* Latar belakang putih saat dihover */
+    border-color: #10b981; /* Warna garis hijau saat dihover */
+    cursor: default; /* Mengubah kursor menjadi default */
+  }
+  
+  .custom-btn {
+    margin-right: 20px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+/* Testimoni Pelanggan */
+
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+}
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
+  list-style: none;
+  background: #fff;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
+}
+.carousel .card .img {
+  background: #8B53FF;
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+.card .img img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+}
+.carousel .card h2 {
+  font-weight: 500;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: #6A6D78;
+  font-size: 1.31rem;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+p {
+  text-align: center;
+}
+
+/* Aplikasi */
+
+#aplikasi {
+  position: relative;
+  border-radius: 2px solid green;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.display-4 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+[data-aos="zoom-out-up"] {
+  animation-name: zoom-out-up;
+}
+
+[data-aos-duration="1000"] {
+  animation-duration: 1000ms;
+}
+
+[data-aos-delay="300"] {
+  animation-delay: 300ms;
+}
+
+[data-aos="flip-up"] {
+  animation-name: flip-up;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.width-lebar {
+  width: 1500px;
+}
+
+.my-48 {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
+.static {
+  position: static;
+}
+
+.bg-secondary {
+  background-color: #6b7280;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.h-96 {
+  height: 24rem;
+}
+
+.w-10/12 {
+  width: 83.333333%;
+}
+
+.mt-36 {
+  margin-top: 9rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.font-weight-normal {
+  font-weight: 400;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.flex-sm-row {
+  flex-direction: row;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.sm:pb-6 {
+  padding-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-secondary {
+  color: #fff;
+  background-color: #6b7280;
+  border-color: #6b7280;
+}
+
+.btn-sm {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-2.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.btn svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#tera {
+  background: #fff;
+  color: #6A6D78;
+  text-align: center;
+  font-size: xx-large;
+}
+
+#tera:hover {
+  background: #10b981;
+}
+
+span,.text-uppercase{
+  color: black;
+  font-weight: 700;
+  
+}
+
+/* Footer */
+
